@@ -1,0 +1,475 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "open sans", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+nav {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 0 1vw;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+h1 {
+    font-family: "playfair sans", serif;
+}
+
+.nav-text {
+    margin-left: 1vw;
+}
+
+.test {
+    height: 100vh;
+}
+
+.logo {
+    width: 10vh;
+    height: 10vh;
+}
+
+/* Hide the navbar links by default */
+.navbar-collapse {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 5vh;
+    right: 0;
+    width: 10vw;
+    padding: 1rem;
+    text-align: center;
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 1rem 0;
+    background-color: #ffffff75;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #dedede;
+}
+
+/* Burger menu */
+.burger {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+}
+
+.burger input {
+    display: none;
+}
+
+.burger span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: white;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+}
+
+/* Toggle burger animation when clicked */
+.burger input:checked ~ span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+    left: 5px;
+}
+
+/* Show the navbar-collapse when burger is checked */
+.burger input:checked ~ .navbar-collapse {
+    display: flex;
+}
+
+
+.hero-section {
+    background-image: url(./img/lighthouse-2372461_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    margin-top: -10vh;
+    align-content: center;
+}
+
+.hero-button, .hero-p {
+    margin-top: 50vh;
+    font-family: "playfair sans", serif;
+    font-size: 30px;
+}
+
+.hero-p{
+    margin-left: 32%;
+    width: 38vw;
+}
+
+.hero-button {
+    margin-left: 45%;
+    width: 38vw;
+    background-color: #ffffff75;
+    border-radius: 10px;
+    padding: 10px 30px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+.hero-button:hover {
+    background-color: #ffffff;
+}
+
+.about-me {
+    margin-top: 30vh;
+    display: flex;
+    border: solid 1px red;
+}
+
+.aboutMeFoto {
+    width: 30vw;
+    height: fit-content;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    border-radius: 10px;
+}
+
+.aboutMeInfo {
+    margin-left: 15vw;
+    margin-top: 5vh;
+}
+
+.aboutMeH1 {
+    width: fit-content;
+    height: 5vh;
+    margin-top: 10vh;
+}
+
+.aboutMeText {
+    width: 30vw;
+    height: 70vh;
+    margin-top: 5vh;
+}
+
+.projecten {
+    border: solid 1px red;
+    width: auto;
+    height: 100vh;
+    margin-top: 30vh;
+    display: flex;
+}
+
+
+
+
+
+
+
+.contact {
+    border: solid 1px red;
+    width: auto;
+    height: 100vh;
+    margin-top: 30vh;
+    display: flex;
+}
+
+.contactH1 {
+    margin-left: 45vw;
+    display: flex;
+}
+
+.contactClickDiv {
+    border: solid 1px white;
+    display: flex;
+    width: 30vw;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.talent {
+    border: solid 1px red;
+    width: 30vw;
+    height: 7vh;
+    display: flex;
+}
+
+
+
+
+.custom-button {
+    --width: 100px;
+    --height: 35px;
+    --tooltip-height: 35px;
+    --tooltip-width: 90px;
+    --gap-between-tooltip-to-button: 18px;
+    --button-color: black;
+    border: 1px solid white;
+    --tooltip-color: #fff;
+    width: var(--width);
+    height: var(--height);
+    background: var(--button-color);
+    position: relative;
+    text-align: center;
+    border-radius: 0.45em;
+    font-family: "Arial";
+    transition: background 0.3s;
+    cursor: pointer;
+  }
+  
+  .custom-button::before {
+    position: absolute;
+    content: attr(data-tooltip);
+    width: var(--tooltip-width);
+    height: var(--tooltip-height);
+    background-color: var(--tooltip-color);
+    font-size: 0.9rem;
+    color: #111;
+    border-radius: 0.25em;
+    line-height: var(--tooltip-height);
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+    left: calc(50% - var(--tooltip-width) / 2);
+  }
+  
+  .custom-button::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: var(--tooltip-color);
+    left: calc(50% - 10px);
+    bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+  }
+  
+  .custom-button::after,
+  .custom-button::before {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+  }
+  
+  .custom-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custom-button-wrapper,
+  .custom-text,
+  .custom-icon {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: #fff;
+  }
+  
+  .custom-text {
+    top: 0;
+  }
+  
+  .custom-text,
+  .custom-icon {
+    transition: top 0.5s;
+  }
+  
+  .custom-icon {
+    color: #fff;
+    top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  .custom-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .custom-button:hover {
+    background: darkgray;
+  }
+  
+  .custom-button:hover .custom-text {
+    top: -100%;
+  }
+  
+  .custom-button:hover .custom-icon {
+    top: 0;
+  }
+  
+
+
+.button {
+    --width: 100px;
+    --height: 35px;
+    --tooltip-height: 35px;
+    --tooltip-width: 90px;
+    --gap-between-tooltip-to-button: 18px;
+    --button-color: black;
+    border: 1px solid white;
+    --tooltip-color: #fff;
+    width: var(--width);
+    height: var(--height);
+    background: var(--button-color);
+    position: relative;
+    text-align: center;
+    border-radius: 0.45em;
+    font-family: "Arial";
+    transition: background 0.3s;
+    cursor: pointer;
+  }
+  
+  .button::before {
+    position: absolute;
+    content: attr(data-tooltip);
+    width: var(--tooltip-width);
+    height: var(--tooltip-height);
+    background-color: var(--tooltip-color);
+    font-size: 0.9rem;
+    color: #111;
+    border-radius: .25em;
+    line-height: var(--tooltip-height);
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+    left: calc(50% - var(--tooltip-width) / 2);
+  }
+  
+  .button::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: var(--tooltip-color);
+    left: calc(50% - 10px);
+    bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+  }
+  
+  .button::after,.button::before {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+  }
+  
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button-wrapper,.text,.icon {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: #fff;
+  }
+  
+  .text {
+    top: 0
+  }
+  
+  .text,.icon {
+    transition: top 0.5s;
+  }
+  
+  .icon {
+    color: #fff;
+    top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .button:hover {
+    background: darkgray;
+  }
+  
+  .button:hover .text {
+    top: -100%;
+  }
+  
+  .button:hover .icon {
+    top: 0;
+  }
+  
+  .button:hover:before,.button:hover:after {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .button:hover:after {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+  }
+  
+  .button:hover:before {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+  }
