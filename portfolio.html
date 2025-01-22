@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="./img/fav-icon/logo-2.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mousglow.css" />
+    <link rel="stylesheet" href="./css/scrollbar.css" />
+    <link rel="stylesheet" href="./css/burger-menu.css" />
+    <link rel="stylesheet" href="./css/herosection.css" />
+    <link rel="stylesheet" href="./css/aboutMe.css" />
+    <link rel="stylesheet" href="./css/projecten.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="./js/mouseglow.js" defer></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  </head>
+  <body>
+    <div class="mouseglow"></div>
+    <nav>
+      <svg width="45" height="40" viewBox="-5 0 140 130" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo">
+        <!-- First path with smooth animation -->
+        <path
+          d="M63 17V3.8147e-06H46H17L0 0V17V55.9792L0.262054 56.2412L0.241211 56.262L48.1457 104.167L48.1665 104.146L63 118.979V17ZM17 17V48.9792L46 77.9792V17H17Z"
+          stroke="white"
+          fill="transparent"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-dasharray="800"
+          stroke-dashoffset="800"
+          style="animation: draw 4s linear forwards, fill 1s ease-in-out 1.5s forwards"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+        />
+        <!-- Second path with smooth animation -->
+        <path
+          d="M80 0H97V39.0526L113 29.815V0H130V20V32.362V39.6299L107.669 52.5229L130.04 69.1055L117.887 81.2583L97 65.7758V102.146L80.1457 119H80V68.4974V48.8675V0Z"
+          stroke="white"
+          fill="transparent"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-dasharray="1100"
+          stroke-dashoffset="1100"
+          style="animation: draw 4s linear forwards, fill 1s ease-in-out 1.5s forwards"
+        />
+        <!-- Add CSS for smooth drawing and fill -->
+        <style>
+          @keyframes draw {
+            to {
+              stroke-dashoffset: 0;
+            }
+          }
+
+          @keyframes fill {
+            to {
+              fill: white;
+            }
+          }
+        </style>
+      </svg>
+
+      <h1 class="nav-text">My Portfolio</h1>
+
+      <!-- Burger Menu -->
+      <label class="burger">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <!-- Collapsible Navbar -->
+        <div class="navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" id="nav-link1" href="#hero">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-link2" href="#about-me">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projecten">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </label>
+    </nav>
+    <div class="hero-section" id="hero">
+      <div class="typeWriter">
+        <div>
+          <p>Discover Why I'm the Perfect Fit for Your Team</p>
+        </div>
+      </div>
+      <br />
+      <a class="hero-button" href="#about-me">follow me</a>
+    </div>
+
+    <div class="about-me" id="about-me">
+      <img class="aboutMeFoto" src="./img/nettefoto.jpg" alt="nette foto" />
+      <div class="aboutMeInfo">
+        <div class="wrapper">
+          <div id="app"></div>
+        </div>
+
+        <script src="./js/typewriter.js"></script>
+      </div>
+    </div>
+
+    <div class="projecten" id="projecten">
+      <h1 class="h1Projecten">projects</h1>
+      <a href="../projecten/gijsmertens.com/index.html" class="trigger1" id="project1"><i class="fa fa-circle" style="font-size: 18px; color: rgba(255, 255, 255, 0.5)"></i> First project</a>
+      <div class="work1">
+        My first project was in the start of my studie. One of my friends asked me to build a website for his karting career. It was called GijsMertens.com but the site is sadly offline.
+        <br /><br />
+        I worked with him on the design and website layout. The website was built for his karting career and he was looking for sponsors.
+        <br /><br />
+        I used HTML and CSS to create the website. But it was so early in my learning process that i could not figure everything out. There where a few things that I wanted to make.
+        <br /><br />
+        <img src="./img/project-pictures/gijsmertens.png" alt="Gijsmertens.com" id="project-pic1" />
+      </div>
+
+      <div class="trigger2"><i class="fa fa-circle" style="font-size: 18px; color: rgba(255, 255, 255, 0.5)"></i> <s></s>Second project</div>
+      <div class="work2">liniekhandlettering</div>
+    </div>
+
+    <div class="contact" id="contact">
+      <h1 class="contactH1">contact</h1>
+      <div class="contactClickDiv">
+        <h1 class="talent">looking for a new talent?</h1>
+
+        <div class="email-copy">DelanoKokx@gmail.com</div>
+
+        <div class="buttonContainer">
+          <div class="custom-button" data-tooltip="Size: 20Mb">
+            <div class="custom-button-wrapper">
+              <div class="custom-text">Contact me</div>
+              <a class="custom-icon" href="https://www.linkedin.com/in/delano-kokx-1804162a2/"> LinkedIn </a>
+            </div>
+          </div>
+          <div class="button" data-tooltip="Size: 105kb">
+            <div class="button-wrapper">
+              <div class="text">CV</div>
+              <a class="icon" href="./cv/cv-Delano.pdf" download>
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="claims">© Delano K.</p>
+      <p class="claims">Made by Delano K.</p>
+    </div>
+  </body>
+</html>

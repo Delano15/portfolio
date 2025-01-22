@@ -1,0 +1,80 @@
+.hero-section {
+  background-image: url(../img/lighthouse-2372461_1920.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  margin-top: -10vh;
+  align-content: center;
+  animation: fade-out linear;
+  animation-timeline: view();
+  animation-range: exit 0%, exit 100%;
+}
+
+@keyframes fade-out {
+  from {
+    scale: 1;
+    opacity: 1;
+  }
+  to {
+    scale: 1;
+    opacity: 0;
+  }
+}
+
+.hero-button,
+.hero-p {
+  margin-top: 50vh;
+  font-family: "playfair sans", serif;
+  font-size: 30px;
+}
+
+.hero-button {
+  margin-left: 45%;
+  width: 38vw;
+  background-color: #ffffff75;
+  border-radius: 10px;
+  padding: 10px 30px;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+
+.hero-button:hover {
+  background-color: #dedede;
+}
+
+.typeWriter {
+  display: flex;
+  margin-top: 58vh;
+  justify-content: center;
+}
+
+.typeWriter p {
+  font-family: "playfair sans", serif;
+  font-size: 1.5rem;
+  margin-inline: auto;
+  overflow: hidden;
+  /*keeps it on one line*/
+  white-space: nowrap;
+  /*the curcer */
+  border-right: 1px solid;
+  /*steps */
+  animation: typing 3s steps(46) forwards, blink 1s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    background-color: transparent;
+  }
+}

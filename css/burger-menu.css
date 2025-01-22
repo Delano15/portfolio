@@ -1,0 +1,122 @@
+/* Hide the navbar links by default */
+* {
+  box-sizing: border-box;
+}
+
+.navbar-collapse {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 5vh;
+  right: 0;
+  min-width: 15vw;
+
+  padding: 1rem;
+  text-align: center;
+}
+
+.navbar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-item {
+  margin: 0.5rem 0;
+  height: 35 px;
+  width: 100%;
+}
+
+.nav-item:hover {
+  background-color: #dedede;
+  border-radius: 10px;
+}
+
+.nav-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff75;
+  border-radius: 10px;
+  padding: 5px;
+  filter: drop-shadow(10px 5px 4px black);
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+/* Burger menu */
+.burger {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: white;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+/* Toggle burger animation when clicked */
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 5px;
+}
+
+/* Show the navbar-collapse when burger is checked */
+.burger input:checked ~ .navbar-collapse {
+  display: flex;
+}

@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "open sans", sans-serif;
+  background-color: black;
+  color: white;
+  background-image: url(../img/Screenshot\ 2024-10-29\ 102308.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+nav {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  padding: 0 1vw;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+h1 {
+  font-family: "playfair sans", serif;
+}
+
+.nav-text {
+  margin-left: 1vw;
+}
+
+.test {
+  height: 100vh;
+}
+
+.logo {
+  width: 8vh;
+  height: 8vh;
+}

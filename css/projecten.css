@@ -1,0 +1,77 @@
+.projecten {
+  /* border: solid 1px red; */
+  width: auto;
+  height: 90vh;
+  margin-top: 20vh;
+  display: flex;
+  position: relative; /* Zorg dat positionering binnen projecten werkt */
+}
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+
+.h1Projecten {
+  position: absolute;
+  top: 5%;
+  left: 70%;
+}
+
+.work1,
+.work2 {
+  display: block;
+  position: absolute;
+  justify-content: left;
+  opacity: 0;
+  background: transparent;
+  border: solid 1px white;
+  border-radius: 0px 50px 50px 0px;
+  transition: 0.5s ease;
+  height: 85vh;
+  width: 30%;
+  bottom: 0;
+}
+
+/* first preoject*/
+
+.trigger1 {
+  position: absolute;
+  top: 12%;
+  left: 71%;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.trigger1:hover ~ .work1 {
+  opacity: 1;
+}
+
+#project1 {
+  text-decoration: none;
+  color: white;
+}
+
+#project-pic1 {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  border-radius: 0px 50px 50px 0px;
+  bottom: 0;
+}
+
+/* second project*/
+
+.trigger2 {
+  position: absolute;
+  top: 17%;
+  left: 71%;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.trigger2:hover ~ .work2 {
+  opacity: 1;
+}

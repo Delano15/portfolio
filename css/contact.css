@@ -1,0 +1,282 @@
+.contact {
+  width: auto;
+  height: 80vh;
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactClickDiv {
+  border: solid 1px white;
+  display: flex;
+  width: 70vw;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 5vh;
+  height: 60vh;
+  flex-direction: column;
+}
+
+.talent {
+  width: 30vw;
+  height: 7vh;
+  display: flex;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 9vh;
+}
+
+.email-copy {
+  margin-top: 10vh;
+  font-family: "playfair sans", serif;
+  font-size: 25px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 20vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+}
+
+#myinput {
+  display: hidden;
+}
+
+.footer {
+  display: flex;
+  height: 5vh;
+  align-content: center;
+  justify-content: space-between;
+  padding-left: 18vw;
+  padding-right: 18vw;
+}
+
+.claims {
+  font-size: 1.5vh;
+}
+
+.custom-button {
+  --width: 100px;
+  --height: 35px;
+  --tooltip-height: 35px;
+  --tooltip-width: 90px;
+  --gap-between-tooltip-to-button: 18px;
+  --button-color: black;
+  border: 1px solid white;
+  --tooltip-color: #fff;
+  width: var(--width);
+  height: var(--height);
+  background: transparent;
+  position: relative;
+  text-align: center;
+  border-radius: 0.45em;
+  font-family: "Arial";
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.custom-button::before {
+  position: absolute;
+  content: attr(data-tooltip);
+  width: var(--tooltip-width);
+  height: var(--tooltip-height);
+  background-color: transparent;
+  font-size: 0.9rem;
+  color: #111;
+  border-radius: 0.25em;
+  line-height: var(--tooltip-height);
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+  left: calc(50% - var(--tooltip-width) / 2);
+}
+
+.custom-button::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: var(--tooltip-color);
+  left: calc(50% - 10px);
+  bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+}
+
+.custom-button::after,
+.custom-button::before {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.custom-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-button-wrapper,
+.custom-text,
+.custom-icon {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  color: #fff;
+}
+
+.custom-text {
+  top: 0;
+}
+
+.custom-text,
+.custom-icon {
+  transition: top 0.5s;
+}
+
+.custom-icon {
+  color: #fff;
+  top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.custom-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.custom-button:hover {
+  background: darkgray;
+}
+
+.custom-button:hover .custom-text {
+  top: -100%;
+}
+
+.custom-button:hover .custom-icon {
+  top: 0;
+}
+
+.button {
+  --width: 100px;
+  --height: 35px;
+  --tooltip-height: 35px;
+  --tooltip-width: 90px;
+  --gap-between-tooltip-to-button: 18px;
+  --button-color: black;
+  border: 1px solid white;
+  --tooltip-color: #fff;
+  width: var(--width);
+  height: var(--height);
+  background: transparent;
+  position: relative;
+  text-align: center;
+  border-radius: 0.45em;
+  font-family: "Arial";
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.button::before {
+  position: absolute;
+  content: attr(data-tooltip);
+  width: var(--tooltip-width);
+  height: var(--tooltip-height);
+  background-color: var(--tooltip-color);
+  font-size: 0.9rem;
+  color: #111;
+  border-radius: 0.25em;
+  line-height: var(--tooltip-height);
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+  left: calc(50% - var(--tooltip-width) / 2);
+}
+
+.button::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: var(--tooltip-color);
+  left: calc(50% - 10px);
+  bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+}
+
+.button::after,
+.button::before {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-wrapper,
+.text,
+.icon {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  color: #fff;
+}
+
+.text {
+  top: 0;
+}
+
+.text,
+.icon {
+  transition: top 0.5s;
+}
+
+.icon {
+  color: #fff;
+  top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.button:hover {
+  background: darkgray;
+}
+
+.button:hover .text {
+  top: -100%;
+}
+
+.button:hover .icon {
+  top: 0;
+}
+
+.button:hover:before,
+.button:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.button:hover:after {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+}
+
+.button:hover:before {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+}
