@@ -1,12 +1,12 @@
 .mouseglow {
   position: fixed;
   background-size: cover;
-  translate: -150px -150px;
+  translate: -50px -50px;
   z-index: 5;
   background: radial-gradient(white 0%, #0000 60%);
   opacity: 0.4;
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   pointer-events: none;
 }

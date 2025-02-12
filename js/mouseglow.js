@@ -15,8 +15,8 @@ function animateGlow() {
   if (!mouseDiv) return;
 
   // Add delay by interpolating positions
-  glowX += (mouseX - glowX) * 0.07; // 0.1 controls the speed of delay
-  glowY += (mouseY - glowY) * 0.07;
+  glowX += (mouseX - glowX) * 0.09; // 0.1 controls the speed of delay
+  glowY += (mouseY - glowY) * 0.09;
 
   // Update glow position
   mouseDiv.style.transform = `translate(${glowX - 50}px, ${glowY - 50}px)`; // Centering fix

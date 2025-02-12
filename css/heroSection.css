@@ -26,8 +26,8 @@
 .hero-button,
 .hero-p {
   margin-top: 50vh;
-  font-family: "playfair sans", serif;
-  font-size: 30px;
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
 }
 
 .hero-button {
@@ -47,12 +47,13 @@
 
 .typeWriter {
   display: flex;
-  margin-top: 58vh;
+  margin-top: 43.5vh;
+  color: rgba(55, 51, 52, 255);
   justify-content: center;
 }
 
 .typeWriter p {
-  font-family: "playfair sans", serif;
+  font-family: "Roboto Slab", serif;
   font-size: 1.5rem;
   margin-inline: auto;
   overflow: hidden;
