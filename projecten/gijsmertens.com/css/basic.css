@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+
+
+body {
+    background-image: linear-gradient(to right, #5d5c5c, #000000);
+    color: white;
+    overflow-x: hidden;
+    font-family: "times new roman";
+}
+
+#info-balk {
+    background-color: transparent;
+    padding: 2vw;
+    margin-left: -1.5vw;
+    margin-top: -1.5vw;
+    margin-right: -1.5vw;
+    text-align: center;
+    font-size: 1.6vw;
+}
+
+.logo {
+    position: relative;
+    margin-bottom: -2vw;
+    }
+
+/* \/ index pagina \/ */
+
+#home-gijs {
+    color: white;
+}
+
+#index-foto {
+    margin-left: 25.5vw;
+}
+
+#index-h1, #index-div {
+    text-align: center;
+    color: white;
+}
+
+/* \/ karting-info \/ */
+
+#karting-info-balk {
+    background-color:white ;
+}
+
+#wedstrijd-schema {
+    background-color: transparent;
+    width: 70vw;
+    height: 70vw;
+    margin-left: 13.5vw;
+    margin-top: 2vw;
+    border: white solid 0.3vw ;
+}
+
+/* \/ socials \/ */
+
+.socials-balk {
+    color: white;
+    text-decoration: none;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.links {
+    color: white;
+    text-decoration: none;
+}
+
+#links-div {
+    font-size: 1.7vw;
+    text-align: center;
+    margin-top: 10vw;
+}
+
+#index-div {
+    text-align: center;
+    background-color: transparent;
+    width: 47vw;
+    margin: auto;
+}
+
