@@ -57,12 +57,13 @@
   font-size: 1.5rem;
   margin-inline: auto;
   overflow: hidden;
+  width: 0;
   /*keeps it on one line*/
   white-space: nowrap;
   /*the curcer */
   border-right: 1px solid;
   /*steps */
-  animation: typing 3s steps(46) forwards, blink 1s step-end infinite;
+  animation: typing 3s steps(46) forwards 1.3s, blink 1s step-end infinite;
 }
 
 @keyframes typing {

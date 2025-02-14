@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "<strong>Where It All Started</strong>",
       "<p id='smallSpacer'></p>",
       "I discovered programming during my second year of Senior General Secondary Education. ",
-      "A friend of mine wanted to start a Minecraft server,",
+      "A friend of mine wanted to start a Minecraft server, ",
       "and I thought it was a cool idea, so I tried to help him. ",
       "<p id='smallSpacer'></p>",
       "Back then, I was learning a little bit about coding but not much. ",

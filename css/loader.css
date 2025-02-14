@@ -1,0 +1,27 @@
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000000;
+  background: #fff;
+  opacity: 1;
+
+  transition: all 1.5s ease-out;
+  -moz-transition: all 1.5s ease-out;
+  -webkit-transition: all 1.5s ease-out;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
