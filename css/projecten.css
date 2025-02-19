@@ -1,25 +1,102 @@
 .projecten {
-  /* border: solid 1px red; */
-  width: auto;
-  height: 90vh;
+  width: 100%;
+  height: 100%;
   margin-top: 20vh;
   display: flex;
-  position: relative; /* Zorg dat positionering binnen projecten werkt */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
 
 .h1Projecten {
-  position: absolute;
-  top: 5%;
-  left: 70%;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
 }
 
-.work1,
+.projecten-cards {
+  display: flex;
+  width: 60%;
+  height: fit-content;
+  margin-top: 5vh;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vh;
+  border: solid 1px white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50vh;
+  border-radius: 10px;
+  position: relative;
+  align-items: center;
+  padding: 5px;
+}
+
+.project-1 {
+  width: 100%;
+  height: 100%;
+}
+
+.background-project-1 {
+  background-image: url(../projecten/gijsmertens.com/afb/WhatsApp\ Image\ 2023-09-12\ at\ 12.05.47.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.project-info {
+  width: 98%;
+  height: 50%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.673);
+  opacity: 0;
+  border-radius: 10px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.project-1:hover ~ .project-info {
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.project-info:hover {
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.icon-taal {
+  width: 40px;
+  height: 40px;
+  border: solid 2px gray;
+  background-color: rgba(128, 128, 128, 0.327);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.project-description {
+  color: gray;
+}
+
+.technologies {
+  display: flex;
+  gap: 10px;
+}
+
+/* .work1,
 .work2 {
   display: block;
   position: absolute;
@@ -32,10 +109,10 @@
   height: 85vh;
   width: 30%;
   bottom: 0;
-}
+} */
 
 /* first preoject*/
-
+/* 
 .trigger1 {
   position: absolute;
   top: 12%;
@@ -60,11 +137,11 @@
   height: auto;
   border-radius: 0px 50px 50px 0px;
   bottom: 0;
-}
+} */
 
 /* second project*/
 
-.trigger2 {
+/* .trigger2 {
   position: absolute;
   top: 17%;
   left: 71%;
@@ -74,4 +151,4 @@
 
 .trigger2:hover ~ .work2 {
   opacity: 1;
-}
+} */
