@@ -95,12 +95,16 @@
 }
 
 @media (max-width: 500px) {
+  .about-me {
+    margin-top: 5vh;
+  }
+
   .aboutMeFoto {
     display: none;
   }
 
   #app {
-    height: 450px;
+    height: 400px;
     width: 80vw;
     font-size: 10px;
   }
