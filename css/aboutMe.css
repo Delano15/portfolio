@@ -59,7 +59,7 @@
 
 #app {
   width: 40vw;
-  height: 90vh;
+  height: 82vh;
 }
 
 #largeSpacer {
@@ -68,4 +68,60 @@
 
 #smallSpacer {
   height: 2px;
+}
+
+.typewtiter__wrapper {
+  color: green;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .aboutMeFoto {
+    width: 30vw;
+    height: fit-content;
+    margin-top: 16vh;
+    margin-left: 10vw;
+    border-radius: 10px;
+  }
+
+  #app {
+    height: 400px;
+    font-size: 10px;
+  }
+
+  #largeSpacer {
+    height: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .aboutMeFoto {
+    display: none;
+  }
+
+  #app {
+    height: 450px;
+    width: 80vw;
+    font-size: 10px;
+  }
+
+  #largeSpacer {
+    height: 10px;
+  }
+}
+
+@media (max-width: 300px) {
+  .aboutMeFoto {
+    display: none;
+  }
+
+  #app {
+    height: 450px;
+    width: 80vw;
+    font-size: 10px;
+  }
+
+  #largeSpacer {
+    height: 10px;
+  }
 }
