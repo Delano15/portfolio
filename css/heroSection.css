@@ -71,6 +71,7 @@
   color: rgba(55, 51, 52, 255);
   width: 100%;
   text-align: center;
+  margin-top: 46.6vh;
 }
 
 .typeWriter p {
@@ -85,10 +86,42 @@
 
 /* Responsive design */
 @media (max-width: 768px) {
+  .typeWriter {
+    margin-top: 38.5vh;
+  }
+  .typeWriter p {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 500px) {
+  .hero-section {
+    background-position: 70%;
+  }
+  .typeWriter {
+    margin-top: 36.5vh;
+  }
+  .typeWriter p {
+    font-size: 1rem;
+  }
+  .hero-button {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 320px) {
+  .hero-section {
+    background-position: 75%;
+  }
+  .typeWriter {
+    margin-top: 35.9vh;
+  }
+  .typeWriter p {
+    font-size: 0.8rem;
+  }
+  .hero-button {
+    padding: 8px 20px;
+    font-size: 10px;
+  }
 }
