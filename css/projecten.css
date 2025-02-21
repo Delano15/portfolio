@@ -95,6 +95,10 @@
 
 /* Responsive design */
 @media (max-width: 768px) {
+  .projecten {
+    margin-top: 3vh;
+  }
+
   .projecten-cards {
     width: 80%;
     padding: 15px;
@@ -118,7 +122,7 @@
 
 @media (max-width: 500px) {
   .projecten {
-    margin-top: 1vh;
+    margin-top: 7vh;
   }
 
   .projecten-cards {
@@ -155,7 +159,7 @@
 
 @media (max-width: 300px) {
   .projecten {
-    margin-top: 10vh;
+    margin-top: 5vh;
   }
   .projecten-cards {
     width: 95%;

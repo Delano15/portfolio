@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function startTypewriter() {
     const typewriter = new Typewriter(app, {
       loop: false,
-      delay: 10,
+      delay: 5,
     });
 
     // Store the content in an array

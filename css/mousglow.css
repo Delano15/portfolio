@@ -10,3 +10,10 @@
   border-radius: 50%;
   pointer-events: none;
 }
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .mouseglow {
+    display: none;
+  }
+}
