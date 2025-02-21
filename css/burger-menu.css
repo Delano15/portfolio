@@ -120,3 +120,19 @@
 .burger input:checked ~ .navbar-collapse {
   display: flex;
 }
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    width: 25vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar-collapse {
+    width: 42vw;
+  }
+}
+
+@media (max-width: 320px) {
+}
