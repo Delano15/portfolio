@@ -280,3 +280,56 @@
 .button:hover:before {
   bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
 }
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .contactClickDiv {
+    width: 80vw;
+    border-radius: 10px;
+    height: 60vh;
+  }
+  .buttonContainer {
+    gap: 5vw;
+    width: 30vw;
+  }
+  .custom-button .button {
+    width: 25vw;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .buttonContainer {
+    width: 50vw;
+    gap: 5vw;
+  }
+  .custom-button .button {
+    width: 30vw;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .email-copy {
+    font-size: 16px;
+  }
+  .buttonContainer {
+    width: 60vw;
+    gap: 5vw;
+  }
+  .custom-button .button {
+    width: 30vw;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .buttonContainer {
+    width: 50vw;
+    gap: 5vw;
+  }
+  .custom-button .button {
+    width: 30vw;
+    font-size: 1rem;
+  }
+}
