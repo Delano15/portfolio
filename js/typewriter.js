@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const textArray = [
       "<strong>About Me</strong>",
       "<p id='smallSpacer'></p>",
-      "I'm a 17-year-old student with a passion for programming and creating cool things. ",
+      "I'm a 18-year-old student with a passion for programming and creating cool things. ",
       "I'm currently learning web development and always looking forward to learning something new. ",
       "<p id='largeSpacer'></p>",
       "<strong>Where It All Started</strong>",
