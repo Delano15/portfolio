@@ -110,6 +110,22 @@
   }
 }
 
+@media (max-width: 425px) {
+  .hero-section {
+    background-position: 75%;
+  }
+  .typeWriter {
+    margin-top: 35.4vh;
+  }
+  .typeWriter p {
+    font-size: 0.8rem;
+  }
+  .hero-button {
+    padding: 8px 20px;
+    font-size: 10px;
+  }
+}
+
 @media (max-width: 320px) {
   .hero-section {
     background-position: 75%;
