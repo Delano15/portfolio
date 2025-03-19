@@ -44,8 +44,7 @@
   height: 100%;
 }
 
-.background-project-1 {
-  background-image: url(../projecten/gijsmertens.com/afb/WhatsApp\ Image\ 2023-09-12\ at\ 12.05.47.jpg);
+.background-project {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -57,6 +56,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
+}
+
+#background-project-1 {
+  background-image: url(../projecten/gijsmertens.com/afb/WhatsApp\ Image\ 2023-09-12\ at\ 12.05.47.jpg);
+}
+
+#background-project-2 {
+  background-image: url(../projecten/Ironreps/Ironreps.png);
 }
 
 .project-info {
