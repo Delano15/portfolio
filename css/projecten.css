@@ -63,6 +63,11 @@
 }
 
 #background-project-2 {
+  background-image: url(../projecten/retro-poster/poster-A3.png);
+  background-size: 35% 100%;
+}
+
+#background-project-3 {
   background-image: url(../projecten/Ironreps/Ironreps.png);
 }
 
