@@ -130,6 +130,9 @@
   .project-description {
     font-size: 12px;
   }
+  #background-project-2 {
+    background-size: 32% 100%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -167,6 +170,10 @@
   .project-description {
     font-size: 10px;
   }
+
+  #background-project-2 {
+    background-size: 45% 100%;
+  }
 }
 
 @media (max-width: 300px) {
@@ -190,5 +197,9 @@
   }
   .project-description {
     font-size: 8px;
+  }
+
+  #background-project-2 {
+    background-size: 50% 100%;
   }
 }
